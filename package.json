@@ -23,7 +23,7 @@
     "test"
   ],
   "config": {
-    "MOCHA_OPTS": "-R spec --timeout 10000 --recursive test/ --compilers js:babel-core/register",
+    "MOCHA_OPTS": "-R spec --timeout 10000 --recursive test/ --compilers js:babel-register",
     "ISPARTA_OPTS": "--report html",
     "COVERAGE_OPTS": "--statements 100 --functions 100 --branches 100 --lines 100"
   },
