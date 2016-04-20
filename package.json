@@ -1,7 +1,7 @@
 {
   "name": "loopback-ds-resultset-limit-mixin",
   "description": "A mixin to provide resultset limiting for loopback",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "author": "Tom Kirkpatrick @mrfelton",
   "repository": {
