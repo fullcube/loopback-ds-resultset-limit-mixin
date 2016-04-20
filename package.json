@@ -56,7 +56,7 @@
     "chai": "latest",
     "coveralls": "^2.11.4",
     "eslint": "2.6.0",
-    "eslint-config-fullcube": "https://github.com/fullcube/eslint-config-fullcube/tarball/bc1eae5dee8c009fb89479bf56de0800a4ea2aec",
+    "eslint-config-fullcube": "https://github.com/fullcube/eslint-config-fullcube/tarball/f6fa8c10674d4d1a642b4760cac746635427e4b2",
     "isparta": "latest",
     "loopback": ">=2.22.0",
     "loopback-boot": ">=2.8.0",
