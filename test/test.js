@@ -8,9 +8,6 @@ const expect = chai.expect
 const SIMPLE_APP = path.join(__dirname, 'fixtures', 'simple-app')
 const app = require(path.join(SIMPLE_APP, 'server', 'server.js'))
 
-// Set up promise support for loopback in non-ES6 runtime environmenthis.
-global.Promise = require('bluebird')
-
 describe('REST API', () => {
   // Initialize the app.
   lt.beforeEach.withApp(app)
