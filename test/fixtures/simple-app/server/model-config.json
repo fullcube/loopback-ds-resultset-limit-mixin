@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models"
+    ],
+    "mixins": [
+      "../../../../lib"
+    ]
+  },
+  "Product": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Part": {
+    "dataSource": "db",
+    "public": true
+  }
+}

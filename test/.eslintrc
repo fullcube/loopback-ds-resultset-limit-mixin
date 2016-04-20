@@ -1,0 +1,4 @@
+{
+  "extends": "fullcube/mocha",
+  "parser": "babel-eslint"
+}

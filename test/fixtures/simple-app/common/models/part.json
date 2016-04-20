@@ -1,0 +1,30 @@
+{
+  "name": "Part",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "program": {
+      "type": "belongsTo",
+      "model": "Product",
+      "foreignKey": "productId"
+    }
+  },
+  "methods": {},
+  "mixins": {
+    "ResultsetLimit": {
+      "limit": 3
+    }
+  }
+}

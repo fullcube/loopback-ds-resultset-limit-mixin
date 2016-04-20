@@ -1,0 +1,5 @@
+{
+  "extends": "fullcube",
+  "parser": "babel-eslint",
+  "root": true
+}
