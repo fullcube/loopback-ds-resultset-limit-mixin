@@ -19,8 +19,7 @@
   },
   "homepage": "https://github.com/fullcube/loopback-ds-resultset-limit-mixin",
   "files": [
-    "lib",
-    "test"
+    "dist"
   ],
   "config": {
     "MOCHA_OPTS": "-R spec --timeout 10000 --recursive test/ --compilers js:babel-register",
