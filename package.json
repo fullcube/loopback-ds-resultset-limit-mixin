@@ -34,7 +34,7 @@
     "build": "babel ./lib --experimental --source-maps-inline -d ./dist",
     "lint": "npm run lint-src && npm run lint-test",
     "lint-src": "eslint lib",
-    "lint-test": "eslint test --global describe,it,beforeEach,afterEach",
+    "lint-test": "eslint test",
     "pretest": "npm run lint",
     "test": "npm run quicktest",
     "quicktest": "nyc mocha $npm_package_config_MOCHA_OPTS",
