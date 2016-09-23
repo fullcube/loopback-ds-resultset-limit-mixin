@@ -42,8 +42,8 @@
     "outdated": "npm outdated --depth=0"
   },
   "dependencies": {
-    "debug": "latest",
-    "lodash": "latest"
+    "debug": "2.2.0",
+    "lodash": "4.16.1"
   },
   "peerDependencies": {
     "loopback-datasource-juggler": ">=2.30.x"
