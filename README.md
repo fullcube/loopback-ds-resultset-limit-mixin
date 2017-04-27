@@ -70,5 +70,5 @@ Run the tests in `test.js`
 Run with debugging output on:
 
 ```bash
-  DEBUG='loopback-ds-resultset-limit-mixin' npm test
+  DEBUG='loopback:mixin:resultset-limit' npm test
 ```
