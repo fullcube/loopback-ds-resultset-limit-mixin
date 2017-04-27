@@ -1,4 +1,3 @@
 {
-  "extends": "fullcube/mocha",
-  "parser": "babel-eslint"
+  "extends": "fullcube/mocha"
 }
