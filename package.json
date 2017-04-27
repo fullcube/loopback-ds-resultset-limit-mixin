@@ -21,11 +21,6 @@
   "files": [
     "dist"
   ],
-  "config": {
-    "MOCHA_OPTS": "-R spec --timeout 10000 --recursive test/ --compilers js:babel-register",
-    "ISPARTA_OPTS": "--report html",
-    "COVERAGE_OPTS": "--statements 100 --functions 100 --branches 100 --lines 100"
-  },
   "scripts": {
     "prepublish": "npm run build",
     "preversion": "npm test",
@@ -50,12 +45,14 @@
     "loopback-datasource-juggler": ">=2.30.x"
   },
   "devDependencies": {
+    "@bubltechnology/customizable-commit-analyzer": "^1.0.2-0",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "latest",
     "condition-circle": "^1.5.0",
+    "conventional-commit-types": "^2.1.0",
     "coveralls": "^2.13.0",
     "eslint": "^2.11.1",
     "eslint-config-fullcube": "^1.0.46",
@@ -73,7 +70,29 @@
       "es2015"
     ]
   },
+  "config": {
+    "MOCHA_OPTS": "-R spec --timeout 10000 --recursive test/ --compilers js:babel-register",
+    "ISPARTA_OPTS": "--report html",
+    "COVERAGE_OPTS": "--statements 100 --functions 100 --branches 100 --lines 100",
+    "commitTypeMap": {
+      "feat": "minor",
+      "fix": "patch",
+      "docs": "patch",
+      "style": "patch",
+      "refactor": "patch",
+      "perf": "patch",
+      "test": "patch",
+      "build": "patch",
+      "ci": "patch",
+      "chore": "patch",
+      "revert": "patch"
+    },
+    "validate-commit-msg": {
+      "types": "conventional-commit-types"
+    }
+  },
   "release": {
-    "verifyConditions": "condition-circle"
+    "verifyConditions": "condition-circle",
+    "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
   }
 }
