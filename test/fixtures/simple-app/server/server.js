@@ -2,7 +2,7 @@ const loopback = require('loopback')
 const boot = require('loopback-boot')
 const explorer = require('loopback-component-explorer')
 
-const app = module.exports = loopback()
+const app = loopback()
 
 app.use('/api', loopback.rest())
 
@@ -30,3 +30,5 @@ boot(app, __dirname, function(err) {
     app.start()
   }
 })
+
+module.exports = app

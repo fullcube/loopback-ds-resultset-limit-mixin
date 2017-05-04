@@ -1,9 +1,9 @@
-const TestDataBuilder = require('loopback-testing').TestDataBuilder
-const ref = TestDataBuilder.ref
 const lt = require('loopback-testing')
 const path = require('path')
 const chai = require('chai')
-const expect = chai.expect
+
+const { TestDataBuilder, TestDataBuilder: { ref } } = lt
+const { expect } = chai
 
 const SIMPLE_APP = path.join(__dirname, 'fixtures', 'simple-app')
 const app = require(path.join(SIMPLE_APP, 'server', 'server.js'))
