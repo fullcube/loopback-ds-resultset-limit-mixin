@@ -19,7 +19,7 @@ INSTALL
 npm install --save loopback-ds-resultset-limit-mixin
 ```
 
-Then you should register the mixin in your app by adding `../node_modules/loopback-ds-resultset-limit-mixin/dist` to the `mixins` property to your `server/model-config.json` like the following:
+Then you should register the mixin in your app by adding `../node_modules/loopback-ds-resultset-limit-mixin/lib` to the `mixins` property to your `server/model-config.json` like the following:
 ```js
 {
   "_meta": {
@@ -31,7 +31,7 @@ Then you should register the mixin in your app by adding `../node_modules/loopba
     ],
     "mixins": [
       "loopback/common/mixins",
-      "../node_modules/loopback-ds-resultset-limit-mixin/dist",
+      "../node_modules/loopback-ds-resultset-limit-mixin/lib",
       "../common/mixins"
     ]
   }
