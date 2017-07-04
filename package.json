@@ -18,9 +18,6 @@
     "url": "https://github.com/fullcube/loopback-ds-resultset-limit-mixin/issues"
   },
   "homepage": "https://github.com/fullcube/loopback-ds-resultset-limit-mixin",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "lint": "eslint .",
     "test": "NODE_ENV=test nyc --reporter=lcov --reporter=text --reporter=text-summary mocha test/*test.js",
