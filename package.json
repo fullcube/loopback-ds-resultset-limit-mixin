@@ -34,7 +34,7 @@
     "@bubltechnology/customizable-commit-analyzer": "^1.0.2-0",
     "chai": "latest",
     "condition-circle": "^1.5.0",
-    "conventional-commit-types": "^2.1.0",
+    "conventional-commit-types": "^3.0.0",
     "coveralls": "^2.13.0",
     "eslint-config-fullcube": "^2.0.0",
     "loopback": "^3.6.0",
